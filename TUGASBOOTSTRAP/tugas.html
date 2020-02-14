@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar Lingkungan Hidup</title>
+    <!-- load bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Load jquery and bootstrap js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <style media="screen">
+    *{
+      box-sizing: border-box;
+    }
+    .headers{
+      width: 100%;
+      height: 530px;
+      background: url("ranugumbolo.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.5);
+    }
+    .headers h1{
+      text-align: center;
+      color: white;
+      margin-top: 111px;
+    }
+    .headers h2{
+      text-align: center;
+      color: white;
+    }
+
+    .pengertian{
+      height: auto;
+      background-color: lightgreen;
+    }
+
+    .headers h4{
+      text-align: center;
+    }
+    .gambar{
+      height: auto;
+      background-color: lightgrey;
+    }
+    .hari{
+      height: auto;
+      background-color: grey;
+    }
+    .hari h5{
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-success navbar-light">
+      <a href="#">
+         <img src="logo.png" width="100" alt="">
+      </a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+        <span class="navbar navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#pengertian" class="nav-link">Pengertian</a></li>
+        <li class="nav-item"><a href="#gambar" class="nav-link">Gambar</a></li>
+        <li class="nav-item"><a href="#hari" class="nav-link">Hari Lingkungan Hidup</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="Bonus" data-toggle="dropdown">Bonus<a/>
+            <div class="dropdown-menu">
+              <a target="_blank" href="https://id.pinterest.com/search/pins/?q=hutan%20indonesia&rs=typed&term_meta[]=hutan%7Ctyped&term_meta[]=indonesia%7Ctyped" class="dropdown-item">Pinterest<a/>
+              <a target="_blank" href="https://www.youtube.com/watch?v=jF6py6I6SCM" class="dropdown-item">Youtube</a>
+              <a target="_blank" href="https://www.instagram.com/dlhjatim/?hl=id" class="dropdown-item">Instagram</a>
+            </div
+        </li>
+      </ul>
+    </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="headers">
+          <h1>Lingkungan Hidupku</h1>
+          <h2>"Cintai aku,juga Lingkunganmu"</h2>
+        </div>
+      </div>
+
+      <div id="pengertian" class="row pengertian col-12">
+        <div class="col-6">
+        <h4>Lingkungan hidup adalah kesatuan ruang dengan semua benda,
+           daya, keadaan, dan makhluk hidup, termasuk manusia
+           dan perilakunya, yang mempengaruhi kelangsungan perikehidupan
+           dan kesejahteraan manusia serta makhluk hidup lain. Sedangkan
+           ruang lingkup lingkungan hidup Indonesia meliputi ruang, tempat
+           Negara Kesatuan Republik Indonesia yang berwawasan Nusantara dalam
+           melaksanakan kedaulatan, hak berdaulat, dan yurisdiksinya.
+           Dalam lingkungan hidup terdapat ekosistem, yaitu tatanan unsur lingkungan hidup
+           yang merupakan kesatuan utuh menyeluruh dan saling mempengaruhi dalam membentuk
+           keseimbangan, stabilitas, dan produktivitas lingkungan hidup. </h4>
+           </div>
+           <div class="col-6">
+            <h4>Masalah lingkungan hidup di Indonesia
+                Bahaya alam: banjir, kemarau panjang, tsunami, gempa bumi, gunung berapi,
+                kebakaran hutan, gunung lumpur,
+                tanah longsor,limbah industri, limbah pariwisata, dan limbah rumah sakit.
+                Masalah Lingkungan hidup di Indonesia saat ini: penebangan hutan secara liar/pembalakan hutan; polusi air dari
+                limbah industri dan pertambangan; polusi udara di daerah perkotaan (Jakarta merupakan kota dengan udara
+                paling kotor ke 3 di dunia); asap dan kabut dari kebakaran hutan; kebakaran hutan permanen/tidak dapat dipadamkan;
+                perambahan suaka alam/suaka margasatwa; </h4>
+      </div>
+      </div>
+
+      <div id="gambar" class="row gambar col-12">
+        <div class="carousel slide" data-ride="carosuel" id="slide">
+          <!-- indikator slide -->
+          <ul class="carousel-indicators">
+            <li data-target="#slide" data-slide-to="0" class="active"></li>
+            <!-- class active berarti elemen tersebut yang pertama kali ditampilkan saat load halaman -->
+            <li data-target="#slide" data-slide-to="1"></li>
+            <li data-target="#slide" data-slide-to="2"></li>
+          </ul>
+
+          <!-- gambar slide -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="htn.jpg" width="100%" height="900" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="hutan.jpg" width="100%" height="800" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="airterjun.jpg" width="100%" height="900" alt="">
+            </div>
+          </div>
+
+          <!-- navigasi slide -->
+          <a href="#slide" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#slide" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+  </div>
+
+        <div id="hari" class="row hari">
+          <div class="col-12">
+            <h5 class="text-center">PERINGATAN HARI LINGKUNGAN HIDUP</h5>
+          </div>
+
+          <table class="container table table-hover col-lg-6 col-sm-12">
+            <thead>
+              <tr class="table-primary">
+                <th>Tanggal</th>
+                <th>Agenda</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-success">
+                <td>15 JANUARI</td>
+                <td>Hari Peringatan Laut dan Samudera nasional</td>
+              </tr>
+              <tr class="table-dark">
+                <td>2 FEBRUARI</td>
+                <td>Hari Lahan Basah Sedunia</td>
+              </tr>
+              <tr class="table-success">
+                <td>21 FEBRUARI</td>
+                <td>Hari Peduli Sampah Nasional</td>
+              </tr>
+              <tr class="table-dark">
+                <td>21 MARET</td>
+                <td>Hari Hutan Sedunia</td>
+              </tr>
+              <tr class="table-success">
+                <td>22 MARET</td>
+                <td>Hari Air Sedunia</td>
+              </tr>
+              <tr class="table-dark">
+                <td>23 MARET</td>
+                <td>Hari Meteorologi Sedunia</td>
+              </tr>
+              <tr class="table-success">
+                <td>22 APRIL</td>
+                <td>Hari Bumi</td>
+              </tr>
+              <tr class="table-dark">
+                <td>Jumat terakhir di bulan April</td>
+                <td>Hari Penanaman Pohon</td>
+              </tr>
+              <tr class="table-success">
+                <td>3 MEI</td>
+                <td>Hari Burung Migratori Internasional</td>
+              </tr>
+              <tr class="table-dark">
+                <td>3 MEI</td>
+                <td>Hari Surya</td>
+              </tr>
+              <!-- ini bts -->
+              <tr class="table-success">
+                <td>22 MEI</td>
+                <td>Hari Biodiversitas Dunia</td>
+              </tr>
+              <tr class="table-dark">
+                <td>Jumat ketiga dibulan mei</td>
+                <td>Hari Bersepeda Ke Kantor (Bike-to-Work Day)</td>
+              </tr>
+              <tr class="table-success">
+                <td>31 MEI</td>
+                <td>Hari Anti Tembakau Internasional</td>
+              </tr>
+              <tr class="table-dark">
+                <td>5 JUNI</td>
+                <td>Hari Lingkungan Hidup Sedunia PBB</td>
+              </tr>
+              <tr class="table-success">
+                <td>17 JUNI</td>
+                <td>Hari Melawan Desertifikasi dan Kekeringan Dunia PBB </td>
+              </tr>
+              <tr class="table-dark">
+                <td>11 JULI</td>
+                <td>Hari Populasi Dunia PBB </td>
+              </tr>
+              <tr class="table-success">
+                <td>16 SEPTEMBER</td>
+                <td>Hari Perlindungan Lapisan Ozon Sedunia</td>
+              </tr>
+              <tr class="table-dark">
+                <td>20 SEPTEMBER</td>
+                <td>Hari Emisi Nol (Zero Emissions Day)</td>
+              </tr>
+              <tr class="table-success">
+                <td>22 SEPTEMBER</td>
+                <td>Hari Bebas Mobil (Car Free Day)</td>
+              </tr>
+              <tr class="table-dark">
+                <td>4 OKTOBER DI 2008</td>
+                <td>eDay</td>
+              </tr>
+              <tr class="table-success">
+                <td>Senin pertama di bulan Oktober</td>
+                <td>Hari Habitat Dunia PBB</td>
+              </tr>
+              <tr class="table-dark">
+                <td>13 OKTOBER</td>
+                <td>Hari Pengurangan Bencana Alam Internasional </td>
+              </tr>
+              <tr class="table-success">
+                <td>6 NOVEMBER</td>
+                <td>Hari Peringatan Sedunia untuk Mencegah Eksploitasi Lingkungan dalam Perang dan Konflik Bersenjata</td>
+              </tr>
+              <tr class="table-dark">
+                <td>21 NOVEMBER</td>
+                <td>Hari Pohon</td>
+              </tr>
+              <tr class="table-success">
+                <td>11 DESEMBER</td>
+                <td>Hari Gunung Sedunia</td>
+              </tr>
+              <tr class="table-dark">
+                <td>Pada waktu tertentu di musim panas</td>
+                <td>Hari Aksi Ozon</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </body>
+</html>
